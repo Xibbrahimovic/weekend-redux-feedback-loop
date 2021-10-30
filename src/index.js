@@ -38,9 +38,9 @@ const storeInstance = createStore(
     applyMiddleware(logger)
 );
 
-
+//links up react and redux
 ReactDOM.render(
-<Provider store={storeInstance}> //links up react and redux
+<Provider store={storeInstance}> 
     <App />
     </Provider>, 
     document.getElementById('root'));
