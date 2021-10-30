@@ -8,14 +8,14 @@ import {createStore, combineReducers, applyMiddleware} from 'redux';
 import logger from "redux-logger";
 
 
-const example = {
+const feedbackInfo = {
     feeling: "",
     understanding: "",
     support: "",
     comments: ""
 }
 
-const formReducer = (state = example, action) => {
+const formReducer = (state = feedbackInfo, action) => {
     if(action.type === 'ADD_FEELING'){
         return {...state, feeling: action.payload};
     }
@@ -27,6 +27,9 @@ const formReducer = (state = example, action) => {
     }
     if(action.type === 'ADD_COMMENTS'){
         return {...state, comments: action.payload};
+    }
+    if(action.type === 'CLEAR'){
+        return feedbackInfo;
     }
     return state;
 }
