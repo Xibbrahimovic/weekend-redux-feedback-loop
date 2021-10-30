@@ -1,34 +1,43 @@
 import {useDispatch, useSelector} from 'react-redux';
 import {useHistory} from 'react-router-dom';
+import {useState} from 'react';
 
 
 function FeelingForm(){
     const dispatch = useDispatch();
     const history = useHistory();
+    const [feeling, setFeeling] = useState({feeling: "" });
 
 
 
-    const addFeeling = (event) => { 
+    const handleChangeFor = (event) => { 
         event.preventDefault();
+        setFeeling(event.target.value)
+        
+    }; //end add feeling function 
 
-        dispatch({//send feeling data to reducer 
-            type: "ADD_FEELING",
-            payload: feelingData
-        })
-    };//end add feeling function 
+    const handleSubmit = (event) => {
+
+    dispatch({//send feeling data to reducer 
+        type: "ADD_FEELING",
+        payload: feeling
+    })
+}
 
 
 
     return(
-        <form>
+        <form onSubmit={(event) => handleSubmit(event)}>
             <input
-            onChange={(event) => addFeeling(event)}
+            onChange={(event) => handleChangeFor(event)}
             type="number"
-            value={feelingData}
-            placeholder="How are you feeling today?">
+            value=""
+            min="1"
+            max="5"
+            required>
         </input>
         
-        <button>Next</button>
+        <button type="submit">Next</button>
 
         </form>
 
