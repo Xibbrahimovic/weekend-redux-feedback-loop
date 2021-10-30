@@ -17,6 +17,11 @@ function SupportForm(){
     })
     history.push('/comments');
 }
+
+    const toUnderstanding = () => {
+        history.push('/understanding');
+    }
+    
     return(
         <div>
         <form onSubmit={(event) => handleSubmit(event)}>
@@ -29,7 +34,8 @@ function SupportForm(){
             max="5"
             required>
         </input>
-        
+
+        <button onClick={toUnderstanding}>BACK</button>
         <button type="submit">Next</button>
 
         </form>

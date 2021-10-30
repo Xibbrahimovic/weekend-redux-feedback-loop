@@ -35,6 +35,10 @@ function Review(){
         history.push('/');
     }
 
+    const toComments = () => {
+        history.push('/comments');
+    }
+
     const displaySubmitted = (
         <div>
             <h4>Your feedback is greatly appreciated!</h4>
@@ -49,6 +53,7 @@ function Review(){
         <p>Understanding:{review.understanding} </p>
         <p>Support: {review.support}</p>
         <p>Comments: {review.comments}</p>
+        <button onClick={toComments}>BACK</button>
         <button onClick={submitFeedback}>SUBMIT</button>
         </div>
     )
