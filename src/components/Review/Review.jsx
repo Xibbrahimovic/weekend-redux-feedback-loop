@@ -2,6 +2,7 @@ import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from 'react';
 import {useHistory} from 'react-router-dom';
+import Button from '@mui/material/Button';
 
 
 
@@ -38,14 +39,15 @@ function Review(){
     const toComments = () => {
         history.push('/comments');
     }
-
+      //success page!
     const displaySubmitted = (
         <div>
             <h4>Your feedback is greatly appreciated!</h4>
             <button onClick={newForm}>Start a new feedback form!</button>
         </div>
     )
-
+    
+    //initial render
     const notSubmitted = (
         <div>
         <h2>Review your feedback!</h2>
@@ -53,7 +55,15 @@ function Review(){
         <p>Understanding:{review.understanding} </p>
         <p>Support: {review.support}</p>
         <p>Comments: {review.comments}</p>
-        <button onClick={toComments}>BACK</button>
+        <Button onClick={toComments} variant="outlined" color="error"
+        style={{
+            width: '20px',
+            height: '25px',
+            paddingLeft: '15px',
+            margin: '5px'
+           }}>
+        ←
+        </Button>
         <button onClick={submitFeedback}>SUBMIT</button>
         </div>
     )

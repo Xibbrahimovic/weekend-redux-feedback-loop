@@ -1,7 +1,7 @@
 import {useDispatch} from 'react-redux';
 import {useHistory} from 'react-router-dom';
 import {useState} from 'react';
-
+import Button from '@mui/material/Button';
 
 function SupportForm(){
     const dispatch = useDispatch();
@@ -35,8 +35,22 @@ function SupportForm(){
             required>
         </input>
 
-        <button onClick={toUnderstanding}>BACK</button>
-        <button type="submit">Next</button>
+        <Button onClick={toUnderstanding} variant="outlined" color="error"
+        style={{
+            width: '20px',
+            height: '25px',
+            paddingLeft: '15px',
+            margin: '5px'
+           }}>
+        ←
+        </Button>
+        <Button type="submit" variant="outlined"
+                style={{
+                    width: '20px',
+                    height: '25px',
+                    paddingLeft: '15px',
+                    margin: '5px'
+                   }}>→</Button>
 
         </form>
         </div>

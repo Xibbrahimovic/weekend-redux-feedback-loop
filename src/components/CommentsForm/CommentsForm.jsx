@@ -1,6 +1,7 @@
 import {useDispatch} from 'react-redux';
 import {useHistory} from 'react-router-dom';
 import {useState} from 'react';
+import Button from '@mui/material/Button';
 
 function CommentsForm(){
 
@@ -31,8 +32,22 @@ function CommentsForm(){
                 value={comments}
                 >
             </input>
-            <button onClick={toSupport}>BACK</button>
-            <button type="submit">Next</button>
+            <Button onClick={toSupport} variant="outlined" color="error"
+        style={{
+            width: '20px',
+            height: '25px',
+            paddingLeft: '15px',
+            margin: '5px'
+           }}>
+        ←
+        </Button>
+            <Button type="submit" variant="outlined"
+                    style={{
+                        width: '20px',
+                        height: '25px',
+                        paddingLeft: '15px',
+                        margin: '5px'
+                       }}>→</Button>
     
             </form>
             </div>

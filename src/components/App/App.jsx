@@ -1,17 +1,12 @@
-import React, {useEffect, useState} from 'react';
-import axios from 'axios';
+import React from 'react';
 import {Route, HashRouter as Router, Link} from "react-router-dom";
 
 import FeelingForm from '../FeelingForm/FeelingForm';
 import UnderstandingForm from '../UnderstandingForm/UnderstandingForm';
 import SupportForm from '../SupportForm/SupportForm';
-
 import CommentsForm from '../CommentsForm/CommentsForm';
 
 import Review from '../Review/Review'
-
-import {useDispatch} from 'react-redux';
-
 
 import './App.css';
 
