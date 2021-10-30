@@ -24,7 +24,6 @@ function CommentsForm(){
                 onChange={(event) => setComments(event.target.value)}
                 type="text"
                 value={comments}
-                required
                 >
             </input>
             

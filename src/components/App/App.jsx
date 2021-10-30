@@ -8,7 +8,7 @@ import SupportForm from '../SupportForm/SupportForm';
 
 import CommentsForm from '../CommentsForm/CommentsForm';
 
-import Feedback from '../Feedback/Feedback';
+import Review from '../Review/Review'
 
 import {useDispatch} from 'react-redux';
 
@@ -35,7 +35,7 @@ function App() {
 
     <CommentsForm/>
 
-    <Feedback/>
+    <Review/>
 
     </Router>
   );
