@@ -3,15 +3,16 @@ import axios from 'axios';
 import {Route, HashRouter as Router, Link} from "react-router-dom";
 
 import FeelingForm from '../FeelingForm/FeelingForm';
+import UnderstandingForm from '../UnderstandingForm/UnderstandingForm';
+import SupportForm from '../SupportForm/SupportForm';
 
-// import UnderstandingForm from '../UnderstandingForm/UnderstandingForm';
-// import SupportForm from '../SupportForm/SupportForm';
-// import CommentsForm from '../CommentsForm/CommentsForm';
+import CommentsForm from '../CommentsForm/CommentsForm';
 
 import {useDispatch} from 'react-redux';
 
 
 import './App.css';
+
 
 function App() {
 
@@ -25,6 +26,13 @@ function App() {
       </header>
     </div>
     <FeelingForm/>
+
+    <UnderstandingForm/>
+
+    <SupportForm/>
+
+    <CommentsForm/>
+
     </Router>
   );
 }
