@@ -17,6 +17,10 @@ function UnderstandingForm(){
     })
     history.push('/support');
 }
+    const toFeeling = () => {
+        history.push('/');
+    }
+
     return(
         <div>
         <form onSubmit={(event) => handleSubmit(event)}>
@@ -31,6 +35,7 @@ function UnderstandingForm(){
             >
         </input>
         
+        <button onClick={toFeeling}>BACK</button>
         <button type="submit">Next</button>
 
         </form>

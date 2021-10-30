@@ -17,6 +17,10 @@ function CommentsForm(){
         })
         history.push('/review');
     }
+        const toSupport = () => {
+            history.push('/support');
+        }
+        
         return(
             <div>
             <form onSubmit={(event) => handleSubmit(event)}>
@@ -27,7 +31,7 @@ function CommentsForm(){
                 value={comments}
                 >
             </input>
-            
+            <button onClick={toSupport}>BACK</button>
             <button type="submit">Next</button>
     
             </form>
