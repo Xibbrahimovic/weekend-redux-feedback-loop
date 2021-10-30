@@ -19,16 +19,16 @@ const formReducer = (state = feedbackInfo, action) => {
     if(action.type === 'ADD_FEELING'){
         return {...state, feeling: action.payload};
     }
-    if(action.type === 'ADD_UNDERSTANDING'){
+    else if(action.type === 'ADD_UNDERSTANDING'){
         return {...state, understanding: action.payload};
     }
-    if(action.type === 'ADD_SUPPORT'){
+    else if(action.type === 'ADD_SUPPORT'){
         return {...state, support: action.payload};
     }
-    if(action.type === 'ADD_COMMENTS'){
+    else if(action.type === 'ADD_COMMENTS'){
         return {...state, comments: action.payload};
     }
-    if(action.type === 'CLEAR'){
+    else if(action.type === 'CLEAR'){
         return feedbackInfo;
     }
     return state;

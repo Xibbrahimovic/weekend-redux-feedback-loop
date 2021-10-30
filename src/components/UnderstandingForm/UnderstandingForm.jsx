@@ -15,6 +15,7 @@ function UnderstandingForm(){
         type: "ADD_UNDERSTANDING",
         payload: understanding
     })
+    history.push('/support');
 }
     return(
         <div>

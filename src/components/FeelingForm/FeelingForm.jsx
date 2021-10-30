@@ -15,6 +15,7 @@ function FeelingForm(){
         type: "ADD_FEELING",
         payload: feeling
     })
+    history.push('/understanding');
 }
     return(
         <div>

@@ -7,6 +7,7 @@ router.post('/', (req, res) =>{
     const review = req.body;
 
     const values = [review.feeling, review.understanding, review.support, review.comments];
+    
     pool.query(
         `INSERT INTO "feedback" (
         "feeling", "understanding", "support", "comments")

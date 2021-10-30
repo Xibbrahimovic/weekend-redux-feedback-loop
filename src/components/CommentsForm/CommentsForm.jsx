@@ -15,6 +15,7 @@ function CommentsForm(){
             type: "ADD_COMMENTS",
             payload: comments
         })
+        history.push('/review');
     }
         return(
             <div>

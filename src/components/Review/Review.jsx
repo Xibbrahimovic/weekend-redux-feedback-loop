@@ -1,8 +1,15 @@
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
+import { useState } from 'react';
+import {useHistory} from 'react-router-dom';
+
 
 
 function Review(){
+
+    const [submitStatus, setSubmitStatus] = useState(false);
+
+    const history = useHistory();
     const dispatch = useDispatch();
     const review = useSelector((store) => store.formReducer);
 
@@ -21,9 +28,21 @@ function Review(){
         dispatch({
             type: 'CLEAR'
         })
+        setSubmitStatus(true);
     }
 
-    return(
+    const newForm =() => {
+        history.push('/');
+    }
+
+    const displaySubmitted = (
+        <div>
+            <h4>Your feedback is greatly appreciated!</h4>
+            <button onClick={newForm}>Start a new feedback form!</button>
+        </div>
+    )
+
+    const notSubmitted = (
         <div>
         <h2>Review your feedback!</h2>
         <p>Feelings: {review.feeling}</p>
@@ -32,6 +51,14 @@ function Review(){
         <p>Comments: {review.comments}</p>
         <button onClick={submitFeedback}>SUBMIT</button>
         </div>
+    )
+
+    return(
+        <div>
+            {submitStatus ? displaySubmitted : notSubmitted}
+        </div>
+
+ 
     )
 }
 

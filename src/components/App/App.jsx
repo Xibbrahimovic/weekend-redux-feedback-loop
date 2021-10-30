@@ -27,15 +27,26 @@ function App() {
         <h4>Don't forget it!</h4>
       </header>
     </div>
+
+    <Route path="/" exact>
     <FeelingForm/>
+    </Route>
 
+    <Route path="/understanding">
     <UnderstandingForm/>
+    </Route>
 
+    <Route path="/support">
     <SupportForm/>
+    </Route>
 
+    <Route path="/comments">
     <CommentsForm/>
+    </Route>
 
+    <Route path="/review">
     <Review/>
+    </Route>
 
     </Router>
   );
