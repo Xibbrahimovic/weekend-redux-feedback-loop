@@ -34,8 +34,8 @@ What do I need to do or know before attempting to use your project
 
 ### Prerequisites
 
-*Node.js
-*PostgreSQL
+*Node.js*
+*PostgreSQL*
 
 
 ### Installation
@@ -65,8 +65,10 @@ I would like to thank Prime Digital Academy for giving me the knowledge I have t
 ## Contacts
 
 LinkedIn
-<a href="https://www.linkedin.com/in/https://www.linkedin.com/in/kongxib-vue/">
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>  
+https://www.linkedin.com/in/kongxib-vue/
+
+github
+https://github.com/Xibbrahimovic
+
 Email
-<a href="mailto:kongcvue@gmail.com">
-<img src=https://raw.githubusercontent.com/johnturner4004/readme-generator/master/src/components/assets/images/email_me_button_icon_151852.svg /></a>
+kongcvue@gmail.com
