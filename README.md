@@ -68,6 +68,10 @@ I would like to thank Prime Digital Academy for giving me the knowledge I have t
 
 ## Contacts
 
+If you happen to have any questions or comments, please feel free to reach out to me via LinkedIn or my email!
+ 
+If you want to look at my other work, my github has also been attached for reference! Thanks :)
+
 LinkedIn
 https://www.linkedin.com/in/kongxib-vue/
 
