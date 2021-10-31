@@ -1,4 +1,4 @@
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {useHistory} from 'react-router-dom';
 import {useState} from 'react';
 import Button from '@mui/material/Button';
@@ -7,7 +7,8 @@ import Button from '@mui/material/Button';
 function FeelingForm(){
     const dispatch = useDispatch();
     const history = useHistory();
-    const [feeling, setFeeling] = useState('');
+    const currentFeeling = useSelector((store) => store.formReducer.feeling);
+    const [feeling, setFeeling] = useState(currentFeeling);
 
     const handleSubmit = (event) => {
         event.preventDefault();

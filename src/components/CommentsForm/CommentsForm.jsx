@@ -1,4 +1,4 @@
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {useHistory} from 'react-router-dom';
 import {useState} from 'react';
 import Button from '@mui/material/Button';
@@ -7,7 +7,8 @@ function CommentsForm(){
 
         const dispatch = useDispatch();
         const history = useHistory();
-        const [comments, setComments] = useState('');
+        const currentComments = useSelector((store) => store.formReducer.comments);
+        const [comments, setComments] = useState(currentComments);
     
         const handleSubmit = (event) => {
             event.preventDefault();

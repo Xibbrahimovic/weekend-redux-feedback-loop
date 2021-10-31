@@ -1,4 +1,4 @@
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {useHistory} from 'react-router-dom';
 import {useState} from 'react';
 import Button from '@mui/material/Button';
@@ -7,7 +7,8 @@ import Button from '@mui/material/Button';
 function UnderstandingForm(){
     const dispatch = useDispatch();
     const history = useHistory();
-    const [understanding, setUnderstanding] = useState('');
+    const currentUnderstanding = useSelector((store) => store.formReducer.understanding);
+    const [understanding, setUnderstanding] = useState(currentUnderstanding);
 
     const handleSubmit = (event) => {
         event.preventDefault();

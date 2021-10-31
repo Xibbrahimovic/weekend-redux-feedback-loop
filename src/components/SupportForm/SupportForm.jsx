@@ -1,4 +1,4 @@
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {useHistory} from 'react-router-dom';
 import {useState} from 'react';
 import Button from '@mui/material/Button';
@@ -6,7 +6,8 @@ import Button from '@mui/material/Button';
 function SupportForm(){
     const dispatch = useDispatch();
     const history = useHistory();
-    const [support, setSupport] = useState('');
+    const currentSupport = useSelector((store) => store.formReducer.support);
+    const [support, setSupport] = useState(currentSupport);
 
     const handleSubmit = (event) => {
         event.preventDefault();
