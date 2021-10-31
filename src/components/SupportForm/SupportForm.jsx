@@ -2,6 +2,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {useHistory} from 'react-router-dom';
 import {useState} from 'react';
 import Button from '@mui/material/Button';
+import './SupportForm.css';
 
 function SupportForm(){
     const dispatch = useDispatch();
@@ -29,7 +30,7 @@ function SupportForm(){
         <h2>How well are you being supported?</h2>
         <h3>1 = I would like more support 🙏</h3>
         <h3>5 = My support system is unmatched 🤲</h3>
-        <div>
+        <div className="center">
             <input
             onChange={(event) => setSupport(event.target.value)}
             type="number"
@@ -40,6 +41,7 @@ function SupportForm(){
         </input>
         </div>
 
+        <div className="flex">
         <Button onClick={toUnderstanding} variant="outlined" color="error"
         style={{
             width: '20px',
@@ -56,6 +58,7 @@ function SupportForm(){
                     paddingLeft: '15px',
                     margin: '5px'
                    }}>→</Button>
+                   </div>
 
         </form>
         </div>

@@ -2,6 +2,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {useHistory} from 'react-router-dom';
 import {useState} from 'react';
 import Button from '@mui/material/Button';
+import './FeelingForm.css';
 
 
 function FeelingForm(){
@@ -25,7 +26,9 @@ function FeelingForm(){
         <h2>How are you feeling today?</h2>
         <h3>1 = Not so good...</h3>
         <h3>5 = Couldn't be any better!</h3>
-        <div>
+
+        <div className="flex">
+        <div className="center">
         <input
             onChange={(event) => setFeeling(event.target.value)}
             type="number"
@@ -35,15 +38,20 @@ function FeelingForm(){
             required>
         </input>
         </div>
-
-        <Button type="submit" variant="outlined"
+        
+        <div>
+        <Button
+        type="submit" 
+        variant="outlined"
         style={{
             width: '20px',
             height: '25px',
-            paddingLeft: '15px',
-            margin: '5px'
+           
         }}
         >→</Button>
+        </div>
+
+        </div>
       
 
         </form>
