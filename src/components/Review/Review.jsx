@@ -64,7 +64,11 @@ function Review(){
            }}>
         ←
         </Button>
-        <button onClick={submitFeedback}>SUBMIT</button>
+        <div className="submit-button">
+        <Button onClick={submitFeedback} variant="contained" color="success">
+            SUBMIT
+        </Button>
+        </div>
         </div>
     )
 
