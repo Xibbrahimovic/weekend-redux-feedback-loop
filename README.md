@@ -22,10 +22,13 @@ public/images/screenshot.png
 
 ## Built With
 
-*React.js
-*Material UI
-*Express.js
-*Redux
+*React.js*
+
+*Material UI*
+
+*Express.js*
+
+*Redux*
 
 
 ## Getting Started
@@ -35,6 +38,7 @@ What do I need to do or know before attempting to use your project
 ### Prerequisites
 
 *Node.js*
+
 *PostgreSQL*
 
 
