@@ -51,22 +51,27 @@ function Review(){
     const notSubmitted = (
         <div className="form">
         <h2>Review your feedback!</h2>
-        <p className="font">Feelings: {review.feeling}</p>
+        <p>Feelings: {review.feeling}</p>
         <p>Understanding:{review.understanding} </p>
         <p>Support: {review.support}</p>
         <p>Comments: {review.comments}</p>
-        <Button onClick={toComments} variant="outlined" color="error"
+        <Button 
+        onClick={toComments} 
+        variant="outlined" 
+        color="error"
         style={{
             width: '20px',
             height: '25px',
             paddingLeft: '15px',
             margin: '5px'
-           }}>
+        }}>
         ←
         </Button>
         <div className="submit-button">
-        <Button onClick={submitFeedback} variant="contained" color="success">
-            SUBMIT
+        <Button 
+        onClick={submitFeedback} 
+        variant="contained" 
+        color="success">SUBMIT
         </Button>
         </div>
         </div>
@@ -76,8 +81,6 @@ function Review(){
         <div>
             {submitStatus ? displaySubmitted : notSubmitted}
         </div>
-
- 
     )
 }
 

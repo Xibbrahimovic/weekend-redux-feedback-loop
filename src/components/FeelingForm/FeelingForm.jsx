@@ -50,10 +50,7 @@ function FeelingForm(){
         }}
         >→</Button>
         </div>
-
         </div>
-      
-
         </form>
         </div>
 

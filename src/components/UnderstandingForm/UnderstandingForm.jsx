@@ -31,7 +31,7 @@ function UnderstandingForm(){
         <h3>1 = Not so well ☹️</h3>
         <h3>5 = I feel like an expert! 🧠</h3>
         <div className="center">
-            <input 
+        <input 
             onChange={(event) => setUnderstanding(event.target.value)}
             type="number"
             value={understanding}
@@ -43,31 +43,33 @@ function UnderstandingForm(){
         </div>
 
         <div className="flex">
-        <Button onClick={toFeeling} variant="outlined" color="error"
+        <Button 
+        onClick={toFeeling} 
+        variant="outlined" 
+        color="error"
         style={{
             width: '20px',
             height: '25px',
             paddingLeft: '15px',
             margin: '5px'
-           }}>
+        }}>
         ←
         </Button>
 
-        <Button type="submit" variant="outlined"
-                style={{
-                    width: '20px',
-                    height: '25px',
-                    paddingLeft: '15px',
-                    margin: '5px'
-                }}>→</Button>
+        <Button 
+        type="submit" 
+        variant="outlined"
+        style={{
+            width: '20px',
+            height: '25px',
+            paddingLeft: '15px',
+            margin: '5px'
+        }}>→</Button>
         </div>
 
         </form>
         </div>
-
     )
-
-
 }
 
 export default UnderstandingForm; 

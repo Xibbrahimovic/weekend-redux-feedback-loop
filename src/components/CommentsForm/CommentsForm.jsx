@@ -41,23 +41,28 @@ function CommentsForm(){
 
             <div className="flex">
 
-            <Button onClick={toSupport} variant="outlined" color="error"
-        style={{
-            width: '20px',
-            height: '25px',
-            paddingLeft: '15px',
-            margin: '5px'
-           }}>
+            <Button 
+            onClick={toSupport} 
+            variant="outlined" 
+            color="error"
+            style={{
+                width: '20px',
+                height: '25px',
+                paddingLeft: '15px',
+                margin: '5px'
+            }}>
         ←
         </Button>
-            <Button type="submit" variant="outlined"
-                    style={{
-                        width: '20px',
-                        height: '25px',
-                        paddingLeft: '15px',
-                        margin: '5px'
-                       }}>→</Button>
-                       </div>
+            <Button 
+            type="submit" 
+            variant="outlined"
+            style={{
+                width: '20px',
+                height: '25px',
+                paddingLeft: '15px',
+                margin: '5px'
+            }}>→</Button>
+            </div>
     
             </form>
             </div>

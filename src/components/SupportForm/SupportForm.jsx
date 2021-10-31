@@ -31,7 +31,7 @@ function SupportForm(){
         <h3>1 = I would like more support 🙏</h3>
         <h3>5 = My support system is unmatched 🤲</h3>
         <div className="center">
-            <input
+        <input
             onChange={(event) => setSupport(event.target.value)}
             type="number"
             value={support}
@@ -42,23 +42,28 @@ function SupportForm(){
         </div>
 
         <div className="flex">
-        <Button onClick={toUnderstanding} variant="outlined" color="error"
+        <Button 
+        onClick={toUnderstanding} 
+        variant="outlined" 
+        color="error"
         style={{
             width: '20px',
             height: '25px',
             paddingLeft: '15px',
             margin: '5px'
-           }}>
+        }}>
         ←
         </Button>
-        <Button type="submit" variant="outlined"
-                style={{
-                    width: '20px',
-                    height: '25px',
-                    paddingLeft: '15px',
-                    margin: '5px'
-                   }}>→</Button>
-                   </div>
+        <Button 
+        type="submit" 
+        variant="outlined"
+        style={{
+            width: '20px',
+            height: '25px',
+            paddingLeft: '15px',
+            margin: '5px'
+        }}>→</Button>
+        </div>
 
         </form>
         </div>
