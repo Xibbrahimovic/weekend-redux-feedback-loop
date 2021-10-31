@@ -41,7 +41,7 @@ function Review(){
     }
       //success page!
     const displaySubmitted = (
-        <div>
+        <div className="form">
             <h4>Your feedback is greatly appreciated!</h4>
             <button onClick={newForm}>Start a new feedback form!</button>
         </div>
@@ -49,9 +49,9 @@ function Review(){
     
     //initial render
     const notSubmitted = (
-        <div>
+        <div className="form">
         <h2>Review your feedback!</h2>
-        <p>Feelings: {review.feeling}</p>
+        <p className="font">Feelings: {review.feeling}</p>
         <p>Understanding:{review.understanding} </p>
         <p>Support: {review.support}</p>
         <p>Comments: {review.comments}</p>

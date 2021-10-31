@@ -8,6 +8,7 @@
   padding: 20px;
   color: white;
   margin-bottom: 20px;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .App-title {
@@ -20,4 +21,17 @@
 
 h4 {
   font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.form{
+  margin: auto;
+  height: 50%;
+  width: 70%;
+  border: 1px solid #033076;
+  padding: 10px;
+}
+
+h3, h2, h1{
+  font-family: 'Cormorant Garamond', serif;
 }

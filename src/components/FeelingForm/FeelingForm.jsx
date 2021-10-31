@@ -20,10 +20,13 @@ function FeelingForm(){
     history.push('/understanding');
 }
     return(
-        <div>
+        <div className="form">
         <form onSubmit={(event) => handleSubmit(event)}>
         <h2>How are you feeling today?</h2>
-            <input
+        <h3>1 = Not so good...</h3>
+        <h3>5 = Couldn't be any better!</h3>
+        <div>
+        <input
             onChange={(event) => setFeeling(event.target.value)}
             type="number"
             value={feeling}
@@ -31,7 +34,8 @@ function FeelingForm(){
             max="5"
             required>
         </input>
-        
+        </div>
+
         <Button type="submit" variant="outlined"
         style={{
             width: '20px',
@@ -40,6 +44,7 @@ function FeelingForm(){
             margin: '5px'
         }}
         >→</Button>
+      
 
         </form>
         </div>

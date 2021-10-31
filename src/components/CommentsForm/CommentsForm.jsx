@@ -24,15 +24,18 @@ function CommentsForm(){
         }
         
         return(
-            <div>
+            <div className="form">
             <form onSubmit={(event) => handleSubmit(event)}>
             <h2>Any comments you want to leave?</h2>
+            <h4>Optional</h4>
+            <div className="commentsBox">
                 <input
                 onChange={(event) => setComments(event.target.value)}
                 type="text"
                 value={comments}
                 >
             </input>
+            </div>
             <Button onClick={toSupport} variant="outlined" color="error"
         style={{
             width: '20px',

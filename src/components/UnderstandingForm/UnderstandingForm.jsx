@@ -24,9 +24,12 @@ function UnderstandingForm(){
     }
 
     return(
-        <div>
+        <div className="form">
         <form onSubmit={(event) => handleSubmit(event)}>
         <h2>How well are you understanding the content?</h2>
+        <h3>1 = Not so well ☹️</h3>
+        <h3>5 = I feel like an expert! 🧠</h3>
+        <div>
             <input
             onChange={(event) => setUnderstanding(event.target.value)}
             type="number"
@@ -36,6 +39,7 @@ function UnderstandingForm(){
             required
             >
         </input>
+        </div>
 
         <Button onClick={toFeeling} variant="outlined" color="error"
         style={{
