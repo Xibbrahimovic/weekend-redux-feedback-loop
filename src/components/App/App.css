@@ -25,6 +25,7 @@ h4 {
 }
 
 .form{
+  border-radius: 10px;
   margin: auto;
   height: 50%;
   width: 70%;
