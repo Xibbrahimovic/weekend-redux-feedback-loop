@@ -22,14 +22,14 @@ function Review(){
         })
         .then(response => {
             console.log('POST SUCCESS!', response);
+            dispatch({
+                type: 'CLEAR'
+            })
+            setSubmitStatus(true);
         })
         .catch(error => {
             console.log('Error on post! HELP!' , error);
         })
-        dispatch({
-            type: 'CLEAR'
-        })
-        setSubmitStatus(true);
     }
 
     const newForm =() => {

@@ -29,14 +29,17 @@ function CommentsForm(){
             <form onSubmit={(event) => handleSubmit(event)}>
             <h2>Any comments you want to leave?</h2>
             <h4>Optional</h4>
+            
             <div>
-            <input
+            <textarea
                 className="input"
                 onChange={(event) => setComments(event.target.value)}
                 type="text"
+                rows={5}
+                cols={50}
                 value={comments}
                 >
-            </input>
+            </textarea>
             </div>
 
             <div className="flex">
