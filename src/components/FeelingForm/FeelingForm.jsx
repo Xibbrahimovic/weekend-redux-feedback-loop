@@ -41,14 +41,14 @@ function FeelingForm(){
         
         <div>
         <Button
-        type="submit" 
-        variant="outlined"
-        style={{
-            width: '20px',
-            height: '25px',
-           
-        }}
-        >→</Button>
+            type="submit" 
+            variant="outlined"
+            style={{
+                width: '20px',
+                height: '25px',
+            }}
+            >→
+        </Button>
         </div>
         </div>
         </form>

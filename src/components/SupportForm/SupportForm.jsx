@@ -43,26 +43,29 @@ function SupportForm(){
 
         <div className="flex">
         <Button 
-        onClick={toUnderstanding} 
-        variant="outlined" 
-        color="error"
-        style={{
-            width: '20px',
-            height: '25px',
-            paddingLeft: '15px',
-            margin: '5px'
-        }}>
-        ←
+            onClick={toUnderstanding} 
+            variant="outlined" 
+            color="error"
+            style={{
+                width: '20px',
+                height: '25px',
+                paddingLeft: '15px',
+                margin: '5px'
+            }}>
+            ←
         </Button>
+
         <Button 
-        type="submit" 
-        variant="outlined"
-        style={{
-            width: '20px',
-            height: '25px',
-            paddingLeft: '15px',
-            margin: '5px'
-        }}>→</Button>
+            type="submit" 
+            variant="outlined"
+            style={{
+                width: '20px',
+                height: '25px',
+                paddingLeft: '15px',
+                margin: '5px'
+        }}>→
+        </Button>
+        
         </div>
 
         </form>

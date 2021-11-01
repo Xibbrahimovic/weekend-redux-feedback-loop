@@ -56,22 +56,22 @@ function Review(){
         <p>Support: {review.support}</p>
         <p>Comments: {review.comments}</p>
         <Button 
-        onClick={toComments} 
-        variant="outlined" 
-        color="error"
-        style={{
-            width: '20px',
-            height: '25px',
-            paddingLeft: '15px',
-            margin: '5px'
-        }}>
+            onClick={toComments} 
+            variant="outlined" 
+            color="error"
+            style={{
+                width: '20px',
+                height: '25px',
+                paddingLeft: '15px',
+                margin: '5px'
+            }}>
         ←
         </Button>
         <div className="submit-button">
         <Button 
-        onClick={submitFeedback} 
-        variant="contained" 
-        color="success">SUBMIT
+            onClick={submitFeedback} 
+            variant="contained" 
+            color="success">SUBMIT
         </Button>
         </div>
         </div>
